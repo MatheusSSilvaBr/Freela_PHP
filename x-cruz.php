@@ -1,18 +1,17 @@
 <?php
   //Definindo a classe
-  class Desenho
-{
+  class Desenho{
     public string $desenho;
 
     public function __construct(string $desenho) {
       $this->desenho = $desenho;
       
-  }
+    }
 
     public function mostrarDesenho() {
         echo $this->desenho;
     }
-}
+  }
 
   //Variaveis
   $apresentacao = "Olá, \nEscolha uma das opções abaixo para serem escritas no console: \n1 - Cruz \n2 - X\n3 - Sair\n\n";
@@ -25,14 +24,14 @@
 
   //Funcao para ler o console
   function ler(){
-  return readline("Digite uma opção: ");
+    return readline("Digite uma opção: ");
   }
 
 
   //Funcao app
   function app($textoApresentacao, $cruzObjeto, $xObjeto){
     //Apresentar as opções de saída x ou cruz
-    echo printf($textoApresentacao);
+    echo ($textoApresentacao);
 
     //Escrever na saida a opção escolhida 
     do{
